@@ -38,3 +38,7 @@ path = "src/publisher-otel.rs"
 [[bin]]
 name = "subscriber"
 path = "src/subscriber.rs"
+
+[[bin]]
+name = "subscriber-otel"
+path = "src/subscriber-otel.rs"
