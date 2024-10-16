@@ -25,7 +25,7 @@ use tonic::Request;
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Initialize OpenTelemetry tracing and logging
-    for _i in 0..10 {
+    for _i in 0..1000 {
       run_method().await?;
     }
     opentelemetry::global::shutdown_tracer_provider();
