@@ -25,7 +25,6 @@ use opentelemetry::sdk::{Resource, trace};
 use opentelemetry_otlp::WithExportConfig;
 use tracing::{info, span, Level};
 use tracing_opentelemetry::OpenTelemetrySpanExt;
-// use tracing_subscriber::filter::EnvFilter;
 use tracing_subscriber::layer::SubscriberExt;
 use opentelemetry::trace::TraceError;
 
@@ -167,5 +166,3 @@ async fn init_logging() {
 
     info!("Logging initialized");
 }
-
-// fn main (){}

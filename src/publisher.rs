@@ -16,18 +16,8 @@ use kuksa::val::v1::{val_client::ValClient, SetRequest, EntryUpdate, DataEntry, 
 use kuksa::val::v1::datapoint::Value;
 use kuksa::val::v1::Field;
 use prost_types::Timestamp;
-use tonic::{Request, metadata::MetadataMap, metadata::MetadataValue, metadata::MetadataKey};
-use std::convert::TryFrom;
-use rand::Rng;
-use opentelemetry::sdk::propagation::TraceContextPropagator;
-use opentelemetry::{KeyValue, global, runtime};
-use opentelemetry::sdk::{Resource, trace};
-use opentelemetry_otlp::WithExportConfig;
-use tracing::{info, span, Level};
-use tracing_opentelemetry::OpenTelemetrySpanExt;
-// use tracing_subscriber::filter::EnvFilter;
-use tracing_subscriber::layer::SubscriberExt;
-use opentelemetry::trace::TraceError;
+use tonic::Request;
+
 
 
 
@@ -82,7 +72,7 @@ async fn run_method() -> Result<(), Box<dyn std::error::Error>> {
     };
 
     // Create a SetRequest message
-    let mut request = Request::new(SetRequest {
+    let request = Request::new(SetRequest {
         updates: vec![entry_update],
     });
 
