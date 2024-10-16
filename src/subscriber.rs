@@ -1,10 +1,10 @@
-use kuksa::val::v1::{val_client::ValClient, SubscribeRequest, SubscribeEntry, View, Field};
+use kuksa::val::v1::{val_client::ValClient, Field, SubscribeEntry, SubscribeRequest, View};
+use tokio_stream::StreamExt;
 use tonic::Request;
-use tokio_stream::StreamExt; 
 
 mod kuksa {
-    pub mod val{
-        pub mod v1{
+    pub mod val {
+        pub mod v1 {
             tonic::include_proto!("kuksa.val.v1"); // The string must match the proto package name
         }
     }
