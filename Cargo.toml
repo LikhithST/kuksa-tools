@@ -1,0 +1,40 @@
+[package]
+name = "kuksa-client"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+tonic = "0.9"
+prost = "0.11"
+tokio = { version = "1", features = ["full"] }
+tokio-stream = "0.1"
+prost-types = "0.11"
+chrono = "0.4"
+rand = "0.8"  # Add this for random number generation
+uuid = { version = "1", features = ["v4"] }
+tracing = "0.1.34"
+opentelemetry = { version = "0.19.0", features = ["rt-tokio", "trace"] }
+opentelemetry-otlp = { version="0.12.0",  features = ["tonic", "metrics"] }
+opentelemetry-semantic-conventions = { version="0.11.0" }
+tracing-opentelemetry = "0.19.0"
+tracing-subscriber = { version = "0.3.11", default-features = false, features = [
+    "fmt",
+    "env-filter",
+    "ansi",
+] }
+
+[build-dependencies]
+tonic-build = "0.9"
+
+[[bin]]
+name = "publisher"
+path = "src/publisher.rs"
+
+[[bin]]
+name = "publisher-otel"
+path = "src/publisher-otel.rs"
+
+[[bin]]
+name = "subscriber"
+path = "src/subscriber.rs"
