@@ -1,3 +1,6 @@
 /target
-./protoc-23.4-linux-x86_64.zip
+**/protoc-*x86_64.zip
 ./protoc_install
+**/*Zone.Identifier
+**/=23.4
+**/protoc_install
