@@ -32,6 +32,10 @@ name = "publisher"
 path = "src/publisher.rs"
 
 [[bin]]
+name = "publisher-single-connection"
+path = "src/publisher_singleconnection.rs"
+
+[[bin]]
 name = "publisher-otel"
 path = "src/publisher-otel.rs"
 
