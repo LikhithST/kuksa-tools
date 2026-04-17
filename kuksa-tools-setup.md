@@ -4,7 +4,7 @@ This guide provides instructions to run the Kuksa Databroker and its clients, wi
 
 ---
 
-## 🧰 Components
+## Components
 
 ### 1. Kuksa Databroker with OpenTelemetry (otel)
 ```bash
@@ -47,7 +47,7 @@ cargo run --bin subscriber-otel
 
 ---
 
-## 🔧 Setup Instructions
+## Setup Instructions
 
 ### Step 1: Start the Jaeger Backend
 
