@@ -122,8 +122,8 @@ http://localhost:16686/
 
 ### select the following
 
-![Image 1](doc/img/image1.png)
-![Image 2](doc/img/image4.png)
+![Option Page 1](doc/img/image1.png)
+![Option Page 2](doc/img/image4.png)
 
 ### Traces output
 1. Publish traces
