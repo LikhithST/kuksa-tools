@@ -98,7 +98,7 @@ cargo run --bin subscriber-otel
 ```
 
 Expected output:
-```
+```bash
 Subscribed to changes...
 ```
 
@@ -110,7 +110,7 @@ cargo run --bin publisher-otel
 ```
 
 Expected output:
-```
+```bash
 2025-04-12T12:42:14.186478Z  INFO publisher_otel: Logging initialized
 Response: SetResponse { error: None, errors: [] }
 ```
