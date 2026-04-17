@@ -122,10 +122,8 @@ http://localhost:16686/
 
 ### select the following
 
-<p align="center">
-  <img src="doc/img/image1.png" alt="Image 1" width="200"/>
-  <img src="doc/img/image4.png" alt="Image 2" width="200"/>
-</p>
+![Image 1](doc/img/image1.png)
+![Image 2](doc/img/image4.png)
 
 ### Traces output
 1. Publish traces
